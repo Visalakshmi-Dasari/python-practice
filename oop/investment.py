@@ -7,7 +7,7 @@ class Investment():
         return self.principal*((1+(self.interest/100))**years)
 
     def __str__(self):
-        return 'Principal - ' + str(self.principal) +'    '+  'Interest rate  - ' + str(self.interest)
+        return 'Principal_dheeraj - ' + str(self.principal) +'    '+  'Interest rate  - ' + str(self.interest)
 
 x=Investment(1000,5.12)
 print x.interest
