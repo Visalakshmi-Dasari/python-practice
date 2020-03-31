@@ -1,0 +1,880 @@
+
+---------
+Log started at Fri Mar 13 18:32:47 2020 with timestamp : 20200313183247.
+---------
+
+2020-03-13 18:32:47,304 [MainThread] DEBUG:tdc_autostart.tdc_nodestart:
+---------
+Log started at Fri Mar 13 18:32:47 2020 with timestamp : 20200313183247.
+---------
+
+####################7.6.0-07.06.00.00-unknown_commit####################
+2020-03-13 18:32:47,305 [MainThread] INFO:tdc_autostart.tdc_nodestart:####################7.6.0-07.06.00.00-unknown_commit####################
+Started processing PMA IDs : [35]
+2020-03-13 18:32:47,306 [MainThread] DEBUG:tdc_autostart.tdc_nodestart:Started processing PMA IDs : [35]
+2020-03-13 18:32:47,306 [MainThread] INFO:nfr_fallback:Copying pdenfr into PDE bin ...
+2020-03-13 18:32:47,369 [MainThread] INFO:nfr_fallback:bam -r output: ['Node is running in protocol emulation mode.\n', '\n', 'Routes for eth0:0-udp-1001-10.1.1.6:\n', 'Node       Driver       Address\n', 'SMP001-01  03.07.05.08  10.1.1.5\n', 'SMP001-02  03.07.05.08  10.1.1.6\n', 'SMP001-04  03.07.05.08  10.1.1.8\n', '\n', 'Routes for eth0:0-udp-1002-10.1.1.5:\n', 'Node       Driver       Address\n', 'SMP001-01  03.07.05.08  10.1.1.5\n', 'SMP001-02  03.07.05.08  10.1.1.6\n', 'SMP001-04  03.07.05.08  10.1.1.8\n', '\n']
+2020-03-13 18:32:47,370 [MainThread] INFO:nfr_fallback:Nodes still on bynet: ['byn001-04', 'byn001-01', 'byn001-02']
+2020-03-13 18:32:47,370 [MainThread] INFO:nfr_fallback:Sick nodes passed in: 35
+2020-03-13 18:32:47,370 [MainThread] INFO:nfr_fallback:Best guess of online nodes: ['byn001-04', 'byn001-01', 'byn001-02']
+2020-03-13 18:32:47,453 [MainThread] INFO:nfr_fallback:['All 3 node(s) have connected\n']
+2020-03-13 18:32:47,492 [MainThread] INFO:nfr_fallback:['All 3 node(s) have connected\n']
+2020-03-13 18:32:47,492 [MainThread] INFO:nfr_fallback:Copying pdenfr into PDE bin ... Done.
+2020-03-13 18:32:47,492 [MainThread] INFO:nfr_fallback:Moving tdc-nodestart to standby ...
+2020-03-13 18:32:47,526 [MainThread] INFO:nfr_fallback:['All 3 node(s) have connected\n']
+2020-03-13 18:32:47,526 [MainThread] INFO:nfr_fallback:Moving tdc-nodestart to standby ... Done.
+2020-03-13 18:32:47,535 [MainThread] INFO:tdc_azure.azure_helper:Current Cloud Region : AzurePublicCloud
+2020-03-13 18:32:48,577 [MainThread] DEBUG:tdc_misc.tdc_hot_standby:Database nodes info : {u'stopping': [u'database-vm2'], u'running': [u'database-vm0', u'database-vm1', u'database-vm3']}
+2020-03-13 18:32:48,585 [MainThread] INFO:root:Run level on master node is 3
+total number of down nodes: 1
+2020-03-13 18:32:48,585 [MainThread] INFO:tdc_autostart.tdc_nodestart:total number of down nodes: 1
+Alive Nodes [{u'bynet_name': u'byn001-01', u'secondary_ips': {u'database-nic00': [u'10.1.1.5']}, u'fault_domain': 0, u'primary_ip': u'10.1.1.4', u'vnet_name': u'vnet', u'update_domain': 0, u'hostname': u'database001-01', u'instance_id': u'database-vm0', u'nic_names': [u'database-nic00'], u'subnet_nics_map': {u'vmsubnet': u'database-nic00'}, u'location': u'westus', u'pma_id': 33, u'subnet_ids': [u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet'], u'network_security_group_id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/networkSecurityGroups/database-nsg', u'data_disks': [{u'disk_size_gb': 512, u'name': u'database-vm0-datadisk0', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk0', u'pdisk_ids': [u'dsk0'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 0}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk1', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk1', u'pdisk_ids': [u'dsk1'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 1}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk2', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk2', u'pdisk_ids': [u'dsk2'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 2}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk3', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk3', u'pdisk_ids': [u'dsk3'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 3}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk3', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk3', u'pdisk_ids': [u'dsk17'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 19}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk4', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk4', u'pdisk_ids': [u'dsk16'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 20}]}, {u'bynet_name': u'byn001-02', u'secondary_ips': {u'database-nic10': [u'10.1.1.6']}, u'fault_domain': 1, u'primary_ip': u'10.1.1.10', u'vnet_name': u'vnet', u'update_domain': 1, u'hostname': u'database001-02', u'instance_id': u'database-vm1', u'nic_names': [u'database-nic10'], u'subnet_nics_map': {u'vmsubnet': u'database-nic10'}, u'location': u'westus', u'pma_id': 34, u'subnet_ids': [u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet'], u'network_security_group_id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/networkSecurityGroups/database-nsg', u'data_disks': [{u'disk_size_gb': 128, u'name': u'expanded-datadisk1', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk1', u'pdisk_ids': [u'dsk19'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 0}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk4', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk4', u'pdisk_ids': [u'dsk4'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 1}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk5', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk5', u'pdisk_ids': [u'dsk5'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 2}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk6', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk6', u'pdisk_ids': [u'dsk6'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 3}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk7', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk7', u'pdisk_ids': [u'dsk18'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 4}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk7', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk7', u'pdisk_ids': [u'dsk7'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 5}]}, {u'bynet_name': u'byn001-04', u'secondary_ips': {u'database-nic30': [u'10.1.1.8']}, u'fault_domain': 0, u'primary_ip': u'10.1.1.9', u'vnet_name': u'vnet', u'update_domain': 3, u'hostname': u'database001-04', u'instance_id': u'database-vm3', u'nic_names': [u'database-nic30'], u'subnet_nics_map': {u'vmsubnet': u'database-nic30'}, u'location': u'westus', u'pma_id': 36, u'subnet_ids': [u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet'], u'network_security_group_id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/networkSecurityGroups/database-nsg', u'data_disks': [{u'disk_size_gb': 128, u'name': u'expanded-datadisk2', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk2', u'pdisk_ids': [u'dsk22'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 0}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk5', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk5', u'pdisk_ids': [u'dsk23'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 1}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk12', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk12', u'pdisk_ids': [u'dsk12'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 2}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk13', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk13', u'pdisk_ids': [u'dsk13'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 3}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk14', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk14', u'pdisk_ids': [u'dsk14'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 4}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk15', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk15', u'pdisk_ids': [u'dsk15'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 5}]}]
+2020-03-13 18:32:48,586 [MainThread] INFO:tdc_autostart.tdc_nodestart:Alive Nodes [{u'bynet_name': u'byn001-01', u'secondary_ips': {u'database-nic00': [u'10.1.1.5']}, u'fault_domain': 0, u'primary_ip': u'10.1.1.4', u'vnet_name': u'vnet', u'update_domain': 0, u'hostname': u'database001-01', u'instance_id': u'database-vm0', u'nic_names': [u'database-nic00'], u'subnet_nics_map': {u'vmsubnet': u'database-nic00'}, u'location': u'westus', u'pma_id': 33, u'subnet_ids': [u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet'], u'network_security_group_id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/networkSecurityGroups/database-nsg', u'data_disks': [{u'disk_size_gb': 512, u'name': u'database-vm0-datadisk0', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk0', u'pdisk_ids': [u'dsk0'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 0}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk1', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk1', u'pdisk_ids': [u'dsk1'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 1}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk2', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk2', u'pdisk_ids': [u'dsk2'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 2}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk3', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/ADITYA_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk3', u'pdisk_ids': [u'dsk3'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 3}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk3', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk3', u'pdisk_ids': [u'dsk17'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 19}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk4', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk4', u'pdisk_ids': [u'dsk16'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 20}]}, {u'bynet_name': u'byn001-02', u'secondary_ips': {u'database-nic10': [u'10.1.1.6']}, u'fault_domain': 1, u'primary_ip': u'10.1.1.10', u'vnet_name': u'vnet', u'update_domain': 1, u'hostname': u'database001-02', u'instance_id': u'database-vm1', u'nic_names': [u'database-nic10'], u'subnet_nics_map': {u'vmsubnet': u'database-nic10'}, u'location': u'westus', u'pma_id': 34, u'subnet_ids': [u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet'], u'network_security_group_id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/networkSecurityGroups/database-nsg', u'data_disks': [{u'disk_size_gb': 128, u'name': u'expanded-datadisk1', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk1', u'pdisk_ids': [u'dsk19'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 0}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk4', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk4', u'pdisk_ids': [u'dsk4'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 1}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk5', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk5', u'pdisk_ids': [u'dsk5'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 2}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk6', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk6', u'pdisk_ids': [u'dsk6'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 3}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk7', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk7', u'pdisk_ids': [u'dsk18'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 4}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk7', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk7', u'pdisk_ids': [u'dsk7'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 5}]}, {u'bynet_name': u'byn001-04', u'secondary_ips': {u'database-nic30': [u'10.1.1.8']}, u'fault_domain': 0, u'primary_ip': u'10.1.1.9', u'vnet_name': u'vnet', u'update_domain': 3, u'hostname': u'database001-04', u'instance_id': u'database-vm3', u'nic_names': [u'database-nic30'], u'subnet_nics_map': {u'vmsubnet': u'database-nic30'}, u'location': u'westus', u'pma_id': 36, u'subnet_ids': [u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet'], u'network_security_group_id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/networkSecurityGroups/database-nsg', u'data_disks': [{u'disk_size_gb': 128, u'name': u'expanded-datadisk2', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk2', u'pdisk_ids': [u'dsk22'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 0}, {u'disk_size_gb': 128, u'name': u'expanded-datadisk5', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk5', u'pdisk_ids': [u'dsk23'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 1}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk12', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk12', u'pdisk_ids': [u'dsk12'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 2}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk13', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk13', u'pdisk_ids': [u'dsk13'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 3}, {u'disk_size_gb': 512, u'name': u'database-vm0-datadisk14', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk14', u'pdisk_ids': [u'dsk14'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 4}, {u'disk_size_gb': 256, u'name': u'database-vm0-datadisk15', u'id': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk15', u'pdisk_ids': [u'dsk15'], u'caching': u'None', u'type': u'Premium_LRS', u'create_option': u'attach', u'lun': 5}]}]
+Thread RECOVERY1 started
+Producer Thread Started
+2020-03-13 18:32:48,586 [RECOVERY1] INFO:tdc_autostart.tdc_nodestart:Thread RECOVERY1 started
+2020-03-13 18:32:48,586 [AliveCheck] INFO:tdc_autostart.tdc_nodestart:Producer Thread Started
+Task started for node database-vm2
+Thread RECOVERY4 started
+2020-03-13 18:32:48,587 [RECOVERY1] INFO:tdc_autostart.tdc_nodestart:Task started for node database-vm2
+2020-03-13 18:32:48,588 [RECOVERY4] INFO:tdc_autostart.tdc_nodestart:Thread RECOVERY4 started
+2020-03-13 18:32:48,653 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/blmd', '-p']
+2020-03-13 18:32:48,663 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['chkconfig', 'tdqg-node']
+2020-03-13 18:32:48,714 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Command `['chkconfig', 'tdqg-node']` returned:
+
+Starting Recovery of 35
+2020-03-13 18:32:48,714 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:Starting Recovery of 35
+2020-03-13 18:32:48,714 [byn001-03(database-vm2)] INFO:tdc_autostart.TDNodeAzure:Waiting to check whether bynet comes up.
+2020-03-13 18:32:48,715 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:32:48,804 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:32:53,809 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:32:53,875 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:32:58,877 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:32:58,943 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:03,948 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:04,014 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:09,019 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:09,085 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:14,089 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:14,155 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:19,160 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:19,225 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:24,229 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:24,296 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:29,301 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:29,367 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:34,372 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:34,437 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:39,441 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:39,508 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:44,513 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:44,630 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:49,633 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:49,699 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:54,704 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:54,770 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:33:59,773 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:33:59,839 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:34:04,845 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:34:04,912 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:34:09,917 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:34:09,983 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:34:14,988 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:34:15,054 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:34:20,057 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:34:20,123 [byn001-03(database-vm2)] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 3/4 nodes responded
+2020-03-13 18:34:25,129 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Nodes didn't respond: 
+2020-03-13 18:34:25,129 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:90
+### Task 1/15: RunDiagnostics
+2020-03-13 18:34:25,130 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:### Task 1/15: RunDiagnostics
+Running Diagnostics
+2020-03-13 18:34:25,130 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:Running Diagnostics
+2020-03-13 18:34:25,130 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', 'tpatrace', '-l']
+2020-03-13 18:34:30,134 [byn001-03(database-vm2)] INFO:tdc_autostart.NodeStartEvent:Trying to run 'tpatrace -l' and an error occurred: Process did not finish
+2020-03-13 18:34:30,134 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', 'pdestate', '-a']
+2020-03-13 18:34:35,135 [byn001-03(database-vm2)] INFO:tdc_autostart.NodeStartEvent:Trying to run 'pdestate -a' and an error occurred: Process did not finish
+### Task 2/15: CreateNetworkConfig
+2020-03-13 18:34:35,137 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:### Task 2/15: CreateNetworkConfig
+Configuring Network
+2020-03-13 18:34:35,137 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:Configuring Network
+2020-03-13 18:34:35,139 [byn001-03(database-vm2)] DEBUG:tdc_network.bynet:Trying to get pmaid from blmd
+2020-03-13 18:34:35,145 [byn001-03(database-vm2)] DEBUG:tdc_network.bynet:33
+
+2020-03-13 18:34:35,164 [byn001-03(database-vm2)] INFO:tdc_azure.azure_helper:Current Instance ID : database-vm0
+2020-03-13 18:34:35,164 [byn001-03(database-vm2)] DEBUG:tdc_azure.azure_helper:Hostname Prefix is : database
+2020-03-13 18:34:35,171 [Thread-25] DEBUG:tdc_core.base.executors:local_shell [c]:[ -f /etc/opt/teradata/tdconfig/mpplist ] && echo "yes" || echo "no"
+2020-03-13 18:34:35,178 [Thread-25] DEBUG:tdc_core.base.executors:local_shell [o]:yes
+2020-03-13 18:34:35,178 [Thread-25] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && [ -f /etc/opt/teradata/tdconfig/mpplist ] && echo "yes" || echo "no" Done!
+2020-03-13 18:34:35,373 [Thread-26] DEBUG:tdc_core.base.executors:local_shell [c]:cp /etc/opt/teradata/tdconfig/mpplist /tmp/_tmp_mpp_server_tmp8Jf5RA
+2020-03-13 18:34:35,381 [Thread-26] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && cp /etc/opt/teradata/tdconfig/mpplist /tmp/_tmp_mpp_server_tmp8Jf5RA Done!
+2020-03-13 18:34:35,576 [Thread-27] DEBUG:tdc_core.base.executors:local_shell [c]:chmod o+r /tmp/_tmp_mpp_server_tmp8Jf5RA
+2020-03-13 18:34:35,585 [Thread-27] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && chmod o+r /tmp/_tmp_mpp_server_tmp8Jf5RA Done!
+2020-03-13 18:34:35,778 [Thread-28] DEBUG:tdc_core.base.executors:local_shell [c]:rm -f /tmp/_tmp_mpp_server_tmp8Jf5RA
+2020-03-13 18:34:35,786 [Thread-28] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && rm -f /tmp/_tmp_mpp_server_tmp8Jf5RA Done!
+2020-03-13 18:34:35,979 [Thread-29] DEBUG:tdc_core.base.executors:local_shell [c]:[ -f /etc/opt/teradata/sm3g/smainfo ] && echo "yes" || echo "no"
+2020-03-13 18:34:35,986 [Thread-29] DEBUG:tdc_core.base.executors:local_shell [o]:yes
+2020-03-13 18:34:35,987 [Thread-29] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && [ -f /etc/opt/teradata/sm3g/smainfo ] && echo "yes" || echo "no" Done!
+2020-03-13 18:34:36,180 [Thread-30] DEBUG:tdc_core.base.executors:local_shell [c]:cp /etc/opt/teradata/sm3g/smainfo /tmp/_tmp_tmpZOLfah
+2020-03-13 18:34:36,189 [Thread-30] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && cp /etc/opt/teradata/sm3g/smainfo /tmp/_tmp_tmpZOLfah Done!
+2020-03-13 18:34:36,381 [Thread-31] DEBUG:tdc_core.base.executors:local_shell [c]:chmod o+r /tmp/_tmp_tmpZOLfah
+2020-03-13 18:34:36,388 [Thread-31] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && chmod o+r /tmp/_tmp_tmpZOLfah Done!
+2020-03-13 18:34:36,582 [Thread-32] DEBUG:tdc_core.base.executors:local_shell [c]:rm -f /tmp/_tmp_tmpZOLfah
+2020-03-13 18:34:36,590 [Thread-32] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && rm -f /tmp/_tmp_tmpZOLfah Done!
+2020-03-13 18:34:36,784 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [c]:/usr/pde/bin/psh -netecho -sum 0  curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2018-10-01"
+2020-03-13 18:34:37,343 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:
+2020-03-13 18:34:37,343 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:<---------------------  byn001-01  -------------------------------->
+2020-03-13 18:34:37,344 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:{"compute":{"azEnvironment":"AzurePublicCloud","location":"westus","name":"database-vm0","offer":"","osType":"Linux","placementGroupId":"","plan":{"name":"","product":"","publisher":""},"platformFaultDomain":"0","platformUpdateDomain":"0","provider":"Microsoft.Compute","publicKeys":[],"publisher":"","resourceGroupName":"aditya_044604_1969","sku":"","subscriptionId":"3fdc8e96-c6dc-4c31-8997-49bd7bba1c61","tags":"component:database;instanceType:database","version":"","vmId":"38a4032c-c22b-4872-84d1-3abd91311e2b","vmScaleSetName":"","vmSize":"Standard_E16s_v3","zone":""},"network":{"interface":[{"ipv4":{"ipAddress":[{"privateIpAddress":"10.1.1.4","publicIpAddress":"138.91.194.218"},{"privateIpAddress":"10.1.1.5","publicIpAddress":""}],"subnet":[{"address":"10.1.1.0","prefix":"24"}]},"ipv6":{"ipAddress":[]},"macAddress":"000D3A376427"}]}}
+2020-03-13 18:34:37,344 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:<---------------------  byn001-02  -------------------------------->
+2020-03-13 18:34:37,344 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:{"compute":{"azEnvironment":"AzurePublicCloud","location":"westus","name":"database-vm1","offer":"","osType":"Linux","placementGroupId":"","plan":{"name":"","product":"","publisher":""},"platformFaultDomain":"1","platformUpdateDomain":"1","provider":"Microsoft.Compute","publicKeys":[],"publisher":"","resourceGroupName":"aditya_044604_1969","sku":"","subscriptionId":"3fdc8e96-c6dc-4c31-8997-49bd7bba1c61","tags":"component:database;instanceType:database","version":"","vmId":"2629d746-4b88-43ed-95f0-5f3aae200bf2","vmScaleSetName":"","vmSize":"Standard_E16s_v3","zone":""},"network":{"interface":[{"ipv4":{"ipAddress":[{"privateIpAddress":"10.1.1.10","publicIpAddress":""},{"privateIpAddress":"10.1.1.6","publicIpAddress":""}],"subnet":[{"address":"10.1.1.0","prefix":"24"}]},"ipv6":{"ipAddress":[]},"macAddress":"000D3A34F03A"}]}}
+2020-03-13 18:34:37,344 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:<---------------------  byn001-04  -------------------------------->
+2020-03-13 18:34:38,344 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [o]:{"compute":{"azEnvironment":"AzurePublicCloud","location":"westus","name":"database-vm3","offer":"","osType":"Linux","placementGroupId":"","plan":{"name":"","product":"","publisher":""},"platformFaultDomain":"0","platformUpdateDomain":"3","provider":"Microsoft.Compute","publicKeys":[],"publisher":"","resourceGroupName":"aditya_044604_1969","sku":"","subscriptionId":"3fdc8e96-c6dc-4c31-8997-49bd7bba1c61","tags":"component:database;instanceType:database","version":"","vmId":"dcc49a84-ccdd-4754-9be3-036b7badc870","vmScaleSetName":"","vmSize":"Standard_E16s_v3","zone":""},"network":{"interface":[{"ipv4":{"ipAddress":[{"privateIpAddress":"10.1.1.9","publicIpAddress":""},{"privateIpAddress":"10.1.1.8","publicIpAddress":""}],"subnet":[{"address":"10.1.1.0","prefix":"24"}]},"ipv6":{"ipAddress":[]},"macAddress":"000D3A34F7B7"}]}}
+2020-03-13 18:34:38,345 [Thread-33] DEBUG:tdc_core.base.executors:local_shell [c]:unset HISTFILE && /usr/pde/bin/psh -netecho -sum 0  curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2018-10-01" Done!
+2020-03-13 18:34:38,389 [byn001-03(database-vm2)] INFO:tdc_network.bynet:Determining BYNET network
+2020-03-13 18:34:38,389 [byn001-03(database-vm2)] INFO:tdc_network.bynet:Existing network found: 172.31.0.0/16
+Running 'chmod +x /etc/opt/teradata/tdconfig/restart_client_handler.sh'
+2020-03-13 18:34:38,390 [byn001-03(database-vm2)] DEBUG:tdc_autostart.tdc_nodestart:Running 'chmod +x /etc/opt/teradata/tdconfig/restart_client_handler.sh'
+'chmod +x /etc/opt/teradata/tdconfig/restart_client_handler.sh' returned '' with status '0'
+2020-03-13 18:34:38,396 [byn001-03(database-vm2)] DEBUG:tdc_autostart.tdc_nodestart:'chmod +x /etc/opt/teradata/tdconfig/restart_client_handler.sh' returned '' with status '0'
+### Task 3/15: LaunchNewInstance
+2020-03-13 18:34:38,397 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:### Task 3/15: LaunchNewInstance
+# Launching replacement node for database-vm2 (byn001-03:35)
+2020-03-13 18:34:38,397 [byn001-03(database-vm2)] INFO:tdc_autostart.tdc_nodestart:# Launching replacement node for database-vm2 (byn001-03:35)
+2020-03-13 18:34:38,404 [byn001-03(database-vm2)] DEBUG:tdc_azure.azure_helper:Current resource group name : aditya_044604_1969
+2020-03-13 18:34:38,422 [byn001-03(database-vm2)] DEBUG:tdc_azure.azure_helper:Getting Instance IDs with tag : hsn
+2020-03-13 18:34:38,427 [byn001-03(database-vm2)] INFO:tdc_azure.azure_helper:Current instance type : Standard_E16s_v3
+2020-03-13 18:34:38,493 [byn001-03(database-vm2)] INFO:tdc_autostart.TDNodeAzure:Launching new instance with nearly same config as: database-vm2
+2020-03-13 18:34:43,612 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Location of deployment for the VM is : westus
+2020-03-13 18:34:43,619 [byn001-03(database-vm2)] INFO:tdc_azure.azure_helper:Current instance type : Standard_E16s_v3
+2020-03-13 18:34:43,619 [byn001-03(database-vm2)] DEBUG:tdc_azure.azure_helper:Fetching data disk object : database-vm0-datadisk11
+2020-03-13 18:34:43,682 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Data disks are attached to VM : database-vm2
+2020-03-13 18:34:43,804 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Getting NIC data for NIC : database-nic20
+2020-03-13 18:34:43,804 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Getting IP Config for NIC : database-nic20
+2020-03-13 18:34:43,805 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Required NICs are Connected to the VM : database-vm2
+2020-03-13 18:34:43,805 [byn001-03(database-vm2)] INFO:tdc_autostart.TDNodeAzure:Getting NICs from the VM
+2020-03-13 18:34:43,805 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Boot Diagnostics Storage URI for the VM is : https://diagqe5542jwcvpji.blob.core.windows.net/
+2020-03-13 18:34:43,805 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Acquired lock on removing secondary IPs
+2020-03-13 18:34:44,244 [Thread-36] INFO:tdc_azure.azure_helper:Removing IP : 10.1.1.7 from NIC : database-nic20
+2020-03-13 18:34:44,245 [Thread-36] INFO:tdc_azure.azure_helper:Updating the removed IP configurations to NIC : database-nic20
+2020-03-13 18:34:44,339 [Thread-36] DEBUG:tdc_azure.azure_helper:Updating NIC : database-nic20
+2020-03-13 18:37:46,527 [Thread-36] INFO:tdc_azure.azure_helper:Succueessfully updated the IP configurations to NIC : database-nic20
+2020-03-13 18:37:46,622 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Released lock on removing secondary IPs
+2020-03-13 18:37:46,624 [Thread-41] INFO:tdc_autostart.TDNodeAzure:HSN not available. Deploying replacement node.
+2020-03-13 18:37:46,625 [Thread-42] DEBUG:tdc_autostart.TDNodeAzure:Detaching Disks for VM : database-vm2 in resource group : aditya_044604_1969
+2020-03-13 18:37:46,708 [Thread-41] INFO:tdc_autostart.TDNodeAzure:Name of the replacement VM is : database-vm2-1
+2020-03-13 18:37:46,708 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Moving ifcfg files and map_table file in Main node.
+2020-03-13 18:37:46,718 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Deleting Microsoft Extensions Cache.
+2020-03-13 18:37:50,776 [Thread-41] INFO:tdc_autostart.TDNodeAzure:Internal deployment....
+2020-03-13 18:37:50,796 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Creating snapshot started.
+2020-03-13 18:37:50,797 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Acquired snapshot lock
+2020-03-13 18:37:50,797 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Checking for snapshot file in /tmp
+2020-03-13 18:37:50,797 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Creating snapshot of the healthy node osdisk.
+2020-03-13 18:37:50,877 [Thread-41] DEBUG:tdc_azure.azure_helper:Fetching data disk object : database-vm0-osdisk
+2020-03-13 18:37:50,961 [Thread-41] INFO:tdc_azure.azure_helper:Creating snapshot of the instance : database-vm0
+2020-03-13 18:37:50,961 [Thread-41] INFO:tdc_azure.azure_helper:Deleting Current node extensions.
+2020-03-13 18:37:50,961 [Thread-41] INFO:tdc_azure.azure_helper:Deleting the VM extenions for : database-vm0
+2020-03-13 18:37:51,037 [Thread-41] INFO:tdc_azure.azure_helper:Found entensions : OmsAgentForLinux. Deleting it.
+2020-03-13 18:38:01,307 [Thread-41] INFO:tdc_azure.azure_helper:Creating a temporary folder in tdconfig.
+2020-03-13 18:38:01,316 [Thread-41] INFO:tdc_azure.azure_helper:Moving smainfo and netdev files to tmp folder.
+2020-03-13 18:38:01,323 [Thread-41] INFO:tdc_azure.azure_helper:Moving IFCFG and map_table files to tmp folder.
+2020-03-13 18:38:01,341 [Thread-41] INFO:tdc_azure.azure_helper:Re-initializing daemon.
+2020-03-13 18:38:02,766 [Thread-41] INFO:tdc_azure.azure_helper:Re-initialized daemon.
+2020-03-13 18:38:02,767 [Thread-41] INFO:tdc_azure.azure_helper:Setting pde autostart off
+2020-03-13 18:38:02,767 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/pdeconf', '-s', 'autostart=0']
+2020-03-13 18:38:03,060 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/pdeconf', '-s', 'autostart=0']` returned:
+
+2020-03-13 18:38:03,060 [Thread-41] INFO:tdc_azure.azure_helper:Setting chkconfig tpa off
+2020-03-13 18:38:03,060 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/sbin/chkconfig', 'tpa', 'off']
+2020-03-13 18:38:03,242 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Command `['/sbin/chkconfig', 'tpa', 'off']` returned:
+
+2020-03-13 18:38:03,242 [Thread-41] INFO:tdc_azure.azure_helper:Setting chkconfig bynet off
+2020-03-13 18:38:03,242 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/sbin/chkconfig', 'bynet', 'off']
+2020-03-13 18:38:03,418 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Command `['/sbin/chkconfig', 'bynet', 'off']` returned:
+
+2020-03-13 18:38:12,843 [Thread-42] DEBUG:tdc_autostart.TDNodeAzure:Successfully detached data disks from VM
+2020-03-13 18:39:09,840 [Thread-41] INFO:tdc_azure.azure_helper:Moving smainfo and netdev files to original folder.
+2020-03-13 18:39:09,841 [Thread-41] INFO:tdc_azure.azure_helper:Replacing ifcfg files and map_table file in Main node.
+2020-03-13 18:39:09,841 [Thread-41] INFO:tdc_azure.azure_helper:Setting pde autostart to ON
+2020-03-13 18:39:09,841 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/pdeconf', '-s', 'autostart=on']
+2020-03-13 18:39:10,049 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/pdeconf', '-s', 'autostart=on']` returned:
+
+2020-03-13 18:39:10,049 [Thread-41] INFO:tdc_azure.azure_helper:Setting chkconfig bynet on
+2020-03-13 18:39:10,050 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/sbin/chkconfig', 'bynet', 'on']
+2020-03-13 18:39:10,227 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Command `['/sbin/chkconfig', 'bynet', 'on']` returned:
+
+2020-03-13 18:39:10,228 [Thread-41] INFO:tdc_azure.azure_helper:Setting chkconfig tpa on
+2020-03-13 18:39:10,228 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/sbin/chkconfig', 'tpa', 'on']
+2020-03-13 18:39:10,406 [Thread-41] DEBUG:tdc_autostart.ProcessRunner:Command `['/sbin/chkconfig', 'tpa', 'on']` returned:
+
+2020-03-13 18:39:10,415 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Writing snapshot ID to file /etc/opt/teradata/tdconfig/azure_tmp/snp_az_rtdft
+2020-03-13 18:39:12,424 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Data in /etc/opt/teradata/tdconfig/azure_tmp/snp_az_rtdft is : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/snapshots/database-vm020200313063907
+2020-03-13 18:39:12,425 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Snapshot successfully created. Snapshot time stamp : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/snapshots/database-vm020200313063907
+2020-03-13 18:39:12,425 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Released snapshot lock
+2020-03-13 18:39:12,425 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Copying the snapshot to the local container to launch a replacement node
+2020-03-13 18:39:12,425 [Thread-41] INFO:tdc_azure.azure_helper:Creating VHD from snapshot ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/snapshots/database-vm020200313063907 for VM No. : 1
+2020-03-13 18:39:12,522 [Thread-41] DEBUG:tdc_azure.azure_helper:Fetching data disk object : database-vm0-osdisk
+2020-03-13 18:39:17,217 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Moving smainfo and netdev files to its configured location.
+2020-03-13 18:39:17,255 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Tested network interfaces are attached to other VM. Trying with next available names of NICs to create.
+2020-03-13 18:39:17,255 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:New nic name to attach to VM: database-nic2502a
+2020-03-13 18:39:17,255 [Thread-41] INFO:tdc_autostart.TDNodeAzure:Creating network interfaces needed.
+2020-03-13 18:39:17,256 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Creating new NICs for NFR node
+2020-03-13 18:39:17,256 [Thread-41] DEBUG:tdc_azure.azure_helper:Fetching NIC info with name : database-nic2502a
+2020-03-13 18:39:17,310 [Thread-41] INFO:tdc_azure.azure_helper:Creating new NIC with name: database-nic2502a
+2020-03-13 18:39:17,310 [Thread-41] INFO:tdc_azure.azure_helper:Creating NIC for VM  in subnet : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Network/virtualNetworks/vnet/subnets/vmsubnet with name : database-nic2502a
+2020-03-13 18:39:23,969 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Fetching network config to configure bynet on new node.
+2020-03-13 18:39:23,970 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Starting deployment of VM : database-vm2-1 OS Disk Name : database-vm020200313063912copy1 OS Disk VHD URI : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm020200313063912copy1
+2020-03-13 18:40:24,849 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Waiting for the instance to boot up : database-vm2-1
+2020-03-13 18:40:25,033 [Thread-41] DEBUG:tdc_azure.azure_helper:IP address of database-vm2-1 is : 10.1.1.12
+2020-03-13 18:40:58,073 [Thread-41] DEBUG:tdc_azure.azure_helper:Instance database-vm2-1 online
+2020-03-13 18:40:58,074 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Running vm extensions separately on the newly created VM: database-vm2-1
+2020-03-13 18:40:58,074 [Thread-41] INFO:tdc_azure.azure_helper:Deleting the VM extenions for : database-vm2-1
+2020-03-13 18:40:58,169 [Thread-41] INFO:tdc_azure.azure_helper:No extensions found on the VM: database-vm2-1
+2020-03-13 18:40:58,169 [Thread-41] INFO:tdc_azure.azure_helper:Running VM extenions on : database-vm2-1
+2020-03-13 18:43:15,015 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Done Deployment of VM : database-vm2-1
+2020-03-13 18:43:15,034 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Deleting Snapshot created by the script.
+2020-03-13 18:43:15,212 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure:Snapshot deleted successfully.
+2020-03-13 18:43:15,212 [Thread-41] DEBUG:tdc_autostart.TDNodeAzure: Deleting temp Snapshot file: /etc/opt/teradata/tdconfig/azure_tmp/snp_az_rtdft
+2020-03-13 18:43:15,271 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:ReAttaching disks of VM database-vm2 to database-vm2-1
+2020-03-13 18:43:30,918 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Attaching data disks to VM : database-vm2-1 Done
+2020-03-13 18:43:30,919 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Running reconfigure script on VM : database-vm2-1
+2020-03-13 18:43:30,919 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Reconfigure command : /usr/local/bin/tdc-nodestart-reconfigure --pma-id 35 --old-instance-id database-vm2 --tpa-node byn001-01 --replacement-bynet-name byn001-03 --sku_type Generic
+2020-03-13 18:43:30,919 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:The reconfigure script logs will be saved in : /var/log/tdc-nodestart-reconfigure.log in the replaced VM : database-vm2-1
+2020-03-13 18:43:30,919 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Reconfigure command for database-vm2-1 is : /usr/local/bin/tdc-nodestart-reconfigure --pma-id 35 --old-instance-id database-vm2 --tpa-node byn001-01 --replacement-bynet-name byn001-03 --sku_type Generic
+2020-03-13 18:43:30,919 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/local/bin/tdc-nodestart-reconfigure', '--pma-id', '35', '--old-instance-id', 'database-vm2', '--tpa-node', 'byn001-01', '--replacement-bynet-name', 'byn001-03', '--sku_type', 'Generic']
+2020-03-13 18:43:32,891 [byn001-03(database-vm2)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/local/bin/tdc-nodestart-reconfigure', '--pma-id', '35', '--old-instance-id', 'database-vm2', '--tpa-node', 'byn001-01', '--replacement-bynet-name', 'byn001-03', '--sku_type', 'Generic']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+
+2020-03-13 18:43:32,892 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Running reconfigure script on VM : database-vm2-1 completed.
+2020-03-13 18:43:32,892 [byn001-03(database-vm2)] DEBUG:tdc_autostart.TDNodeAzure:Done Configurating VM database-vm2 to new VM database-vm2-1
+2020-03-13 18:43:32,892 [byn001-03(database-vm2)] DEBUG:tdc_azure.azure_helper:Migrating tags from VM database-vm2 to VM database-vm2-1
+2020-03-13 18:43:38,886 [byn001-03(database-vm2)] INFO:tdc_autostart.TDNodeAzure:Setting instanceType tag to database for VM : database-vm2-1
+2020-03-13 18:43:42,046 [byn001-03(database-vm2)] INFO:tdc_azure.azure_helper:Unable to update VM in the designated time. Exception raised to retry
+################################################################################
+2020-03-13 18:43:42,858 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:################################################################################
+# New Instance Launched: database-vm2-1
+2020-03-13 18:43:42,859 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:# New Instance Launched: database-vm2-1
+################################################################################
+2020-03-13 18:43:42,859 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:################################################################################
+### Task 4/15: HandleMSI
+2020-03-13 18:43:42,859 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 4/15: HandleMSI
+Handling MSI for all the instances.
+2020-03-13 18:43:42,859 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Handling MSI for all the instances.
+2020-03-13 18:43:42,976 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_azure.azure_helper:Getting Instance IDs with tag : database
+2020-03-13 18:43:42,991 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_azure.azure_helper:Current instance type : Standard_E16s_v3
+2020-03-13 18:43:43,284 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_azure.azure_helper:Assigning MSI to VM database-vm2-1
+### Task 5/15: CopyFiles
+2020-03-13 18:43:54,537 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 5/15: CopyFiles
+Copying /etc/opt/teradata/tdconfig to byn001-03
+2020-03-13 18:43:54,538 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /etc/opt/teradata/tdconfig to byn001-03
+Running 'tar cf /tmp/tmpv4qSw1 /etc/opt/teradata/tdconfig'
+2020-03-13 18:43:54,538 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpv4qSw1 /etc/opt/teradata/tdconfig'
+'tar cf /tmp/tmpv4qSw1 /etc/opt/teradata/tdconfig' returned 'tar: Removing leading `/' from member names
+tar: /etc/opt/teradata/tdconfig/.pdecnssock: socket ignored
+tar: /etc/opt/teradata/tdconfig/.pdecnspipe: socket ignored' with status '0'
+2020-03-13 18:43:54,625 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpv4qSw1 /etc/opt/teradata/tdconfig' returned 'tar: Removing leading `/' from member names
+tar: /etc/opt/teradata/tdconfig/.pdecnssock: socket ignored
+tar: /etc/opt/teradata/tdconfig/.pdecnspipe: socket ignored' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpv4qSw1 /tmp/'
+2020-03-13 18:43:54,625 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpv4qSw1 /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpv4qSw1 /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------  51927040   1044527 root      tdtrusted /tmp/tmpv4qSw1
+byn001-03:1023: send completed: 52233179 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:54,959 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpv4qSw1 /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------  51927040   1044527 root      tdtrusted /tmp/tmpv4qSw1
+byn001-03:1023: send completed: 52233179 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpv4qSw1 -C /'
+2020-03-13 18:43:54,960 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpv4qSw1 -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpv4qSw1 -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:55,443 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpv4qSw1 -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpv4qSw1'
+2020-03-13 18:43:55,450 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpv4qSw1'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpv4qSw1' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:55,477 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpv4qSw1' returned 'All 1 node(s) have connected' with status '0'
+Copying /var/opt/teradata/tdtemp/uiflib/ to byn001-03
+2020-03-13 18:43:55,477 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /var/opt/teradata/tdtemp/uiflib/ to byn001-03
+Running 'tar cf /tmp/tmpnOPNOV /var/opt/teradata/tdtemp/uiflib/'
+2020-03-13 18:43:55,477 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpnOPNOV /var/opt/teradata/tdtemp/uiflib/'
+'tar cf /tmp/tmpnOPNOV /var/opt/teradata/tdtemp/uiflib/' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:55,484 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpnOPNOV /var/opt/teradata/tdtemp/uiflib/' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpnOPNOV /tmp/'
+2020-03-13 18:43:55,484 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpnOPNOV /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpnOPNOV /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpnOPNOV
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:55,501 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpnOPNOV /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpnOPNOV
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpnOPNOV -C /'
+2020-03-13 18:43:55,502 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpnOPNOV -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpnOPNOV -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:55,577 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpnOPNOV -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpnOPNOV'
+2020-03-13 18:43:55,578 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpnOPNOV'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpnOPNOV' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:55,599 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpnOPNOV' returned 'All 1 node(s) have connected' with status '0'
+Copying /home/tdatuser to byn001-03
+2020-03-13 18:43:55,600 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /home/tdatuser to byn001-03
+Running 'tar cf /tmp/tmplQft37 /home/tdatuser'
+2020-03-13 18:43:55,600 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmplQft37 /home/tdatuser'
+'tar cf /tmp/tmplQft37 /home/tdatuser' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:55,627 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmplQft37 /home/tdatuser' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmplQft37 /tmp/'
+2020-03-13 18:43:55,627 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmplQft37 /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmplQft37 /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     30720   1044525 root      tdtrusted /tmp/tmplQft37
+byn001-03:1023: send completed: 30991 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:55,645 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmplQft37 /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     30720   1044525 root      tdtrusted /tmp/tmplQft37
+byn001-03:1023: send completed: 30991 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmplQft37 -C /'
+2020-03-13 18:43:55,645 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmplQft37 -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmplQft37 -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:55,723 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmplQft37 -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmplQft37'
+2020-03-13 18:43:55,723 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmplQft37'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmplQft37' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:55,743 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmplQft37' returned 'All 1 node(s) have connected' with status '0'
+Copying /etc/cron.d/teradata-azure to byn001-03
+2020-03-13 18:43:55,743 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /etc/cron.d/teradata-azure to byn001-03
+Running 'tar cf /tmp/tmpK4aPcp /etc/cron.d/teradata-azure'
+2020-03-13 18:43:55,743 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpK4aPcp /etc/cron.d/teradata-azure'
+'tar cf /tmp/tmpK4aPcp /etc/cron.d/teradata-azure' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:55,749 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpK4aPcp /etc/cron.d/teradata-azure' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpK4aPcp /tmp/'
+2020-03-13 18:43:55,750 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpK4aPcp /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpK4aPcp /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpK4aPcp
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:55,767 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpK4aPcp /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpK4aPcp
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpK4aPcp -C /'
+2020-03-13 18:43:55,768 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpK4aPcp -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpK4aPcp -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:55,825 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpK4aPcp -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpK4aPcp'
+2020-03-13 18:43:55,826 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpK4aPcp'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpK4aPcp' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:55,845 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpK4aPcp' returned 'All 1 node(s) have connected' with status '0'
+Copying /etc/opt/teradata/dsa/clienthandler.properties to byn001-03
+2020-03-13 18:43:55,845 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /etc/opt/teradata/dsa/clienthandler.properties to byn001-03
+Running 'tar cf /tmp/tmpdFnOez /etc/opt/teradata/dsa/clienthandler.properties'
+2020-03-13 18:43:55,846 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpdFnOez /etc/opt/teradata/dsa/clienthandler.properties'
+'tar cf /tmp/tmpdFnOez /etc/opt/teradata/dsa/clienthandler.properties' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:55,861 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpdFnOez /etc/opt/teradata/dsa/clienthandler.properties' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpdFnOez /tmp/'
+2020-03-13 18:43:55,861 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpdFnOez /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpdFnOez /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpdFnOez
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:55,879 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpdFnOez /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpdFnOez
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpdFnOez -C /'
+2020-03-13 18:43:55,880 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpdFnOez -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpdFnOez -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:55,956 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpdFnOez -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpdFnOez'
+2020-03-13 18:43:55,957 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpdFnOez'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpdFnOez' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:55,976 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpdFnOez' returned 'All 1 node(s) have connected' with status '0'
+Copying /etc/ntp.conf to byn001-03
+2020-03-13 18:43:55,976 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /etc/ntp.conf to byn001-03
+Running 'tar cf /tmp/tmprNEFId /etc/ntp.conf'
+2020-03-13 18:43:55,976 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmprNEFId /etc/ntp.conf'
+'tar cf /tmp/tmprNEFId /etc/ntp.conf' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:55,982 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmprNEFId /etc/ntp.conf' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmprNEFId /tmp/'
+2020-03-13 18:43:55,982 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmprNEFId /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmprNEFId /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmprNEFId
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:56,001 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmprNEFId /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmprNEFId
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmprNEFId -C /'
+2020-03-13 18:43:56,001 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmprNEFId -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmprNEFId -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:56,061 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmprNEFId -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmprNEFId'
+2020-03-13 18:43:56,061 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmprNEFId'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmprNEFId' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:56,081 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmprNEFId' returned 'All 1 node(s) have connected' with status '0'
+Copying /usr/local/lib/python2.7/site-packages/tdc_core/data/system_metadata.json to byn001-03
+2020-03-13 18:43:56,082 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /usr/local/lib/python2.7/site-packages/tdc_core/data/system_metadata.json to byn001-03
+Running 'tar cf /tmp/tmpPyip0Q /usr/local/lib/python2.7/site-packages/tdc_core/data/system_metadata.json'
+2020-03-13 18:43:56,082 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpPyip0Q /usr/local/lib/python2.7/site-packages/tdc_core/data/system_metadata.json'
+'tar cf /tmp/tmpPyip0Q /usr/local/lib/python2.7/site-packages/tdc_core/data/system_metadata.json' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:56,089 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpPyip0Q /usr/local/lib/python2.7/site-packages/tdc_core/data/system_metadata.json' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpPyip0Q /tmp/'
+2020-03-13 18:43:56,090 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpPyip0Q /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpPyip0Q /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------    133120   1044525 root      tdtrusted /tmp/tmpPyip0Q
+byn001-03:1023: send completed: 133991 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:56,110 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpPyip0Q /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------    133120   1044525 root      tdtrusted /tmp/tmpPyip0Q
+byn001-03:1023: send completed: 133991 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpPyip0Q -C /'
+2020-03-13 18:43:56,110 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpPyip0Q -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpPyip0Q -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:56,169 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpPyip0Q -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpPyip0Q'
+2020-03-13 18:43:56,170 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpPyip0Q'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpPyip0Q' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:56,190 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpPyip0Q' returned 'All 1 node(s) have connected' with status '0'
+Copying /usr/local/lib/python2.7/site-packages/tdc_core/data/node_metadata.json to byn001-03
+2020-03-13 18:43:56,190 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /usr/local/lib/python2.7/site-packages/tdc_core/data/node_metadata.json to byn001-03
+Running 'tar cf /tmp/tmpbZO_W3 /usr/local/lib/python2.7/site-packages/tdc_core/data/node_metadata.json'
+2020-03-13 18:43:56,191 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpbZO_W3 /usr/local/lib/python2.7/site-packages/tdc_core/data/node_metadata.json'
+'tar cf /tmp/tmpbZO_W3 /usr/local/lib/python2.7/site-packages/tdc_core/data/node_metadata.json' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:56,198 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpbZO_W3 /usr/local/lib/python2.7/site-packages/tdc_core/data/node_metadata.json' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpbZO_W3 /tmp/'
+2020-03-13 18:43:56,198 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpbZO_W3 /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpbZO_W3 /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     30720   1044525 root      tdtrusted /tmp/tmpbZO_W3
+byn001-03:1023: send completed: 30991 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:56,216 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpbZO_W3 /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     30720   1044525 root      tdtrusted /tmp/tmpbZO_W3
+byn001-03:1023: send completed: 30991 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpbZO_W3 -C /'
+2020-03-13 18:43:56,216 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpbZO_W3 -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpbZO_W3 -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:56,277 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpbZO_W3 -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpbZO_W3'
+2020-03-13 18:43:56,278 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpbZO_W3'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpbZO_W3' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:56,297 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpbZO_W3' returned 'All 1 node(s) have connected' with status '0'
+Copying /usr/local/lib/python2.7/site-packages/tdc_core/data/current_pdisks.json to byn001-03
+2020-03-13 18:43:56,298 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Copying /usr/local/lib/python2.7/site-packages/tdc_core/data/current_pdisks.json to byn001-03
+Running 'tar cf /tmp/tmpAE8ueO /usr/local/lib/python2.7/site-packages/tdc_core/data/current_pdisks.json'
+2020-03-13 18:43:56,298 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running 'tar cf /tmp/tmpAE8ueO /usr/local/lib/python2.7/site-packages/tdc_core/data/current_pdisks.json'
+'tar cf /tmp/tmpAE8ueO /usr/local/lib/python2.7/site-packages/tdc_core/data/current_pdisks.json' returned 'tar: Removing leading `/' from member names' with status '0'
+2020-03-13 18:43:56,305 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'tar cf /tmp/tmpAE8ueO /usr/local/lib/python2.7/site-packages/tdc_core/data/current_pdisks.json' returned 'tar: Removing leading `/' from member names' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpAE8ueO /tmp/'
+2020-03-13 18:43:56,306 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpAE8ueO /tmp/'
+'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpAE8ueO /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpAE8ueO
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+2020-03-13 18:43:56,324 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -send /tmp/tmpAE8ueO /tmp/' returned 'All 1 node(s) have connected
+MODE            SIZE     INODE USER      GROUP     FILE
+-rw-------     10240   1044525 root      tdtrusted /tmp/tmpAE8ueO
+byn001-03:1023: send completed: 10391 bytes received (1 files/0 directories)' with status '0'
+Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpAE8ueO -C /'
+2020-03-13 18:43:56,324 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpAE8ueO -C /'
+'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpAE8ueO -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+2020-03-13 18:43:56,385 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/psh -N byn001-03 tar -xf /tmp/tmpAE8ueO -C /' returned '
+<---------------------  byn001-03  -------------------------------->' with status '0'
+Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpAE8ueO'
+2020-03-13 18:43:56,385 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpAE8ueO'
+'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpAE8ueO' returned 'All 1 node(s) have connected' with status '0'
+2020-03-13 18:43:56,407 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/usr/pde/bin/pcl -nodes byn001-03 -s rm -rf /tmp/tmpAE8ueO' returned 'All 1 node(s) have connected' with status '0'
+### Task 6/15: SetTimezone
+2020-03-13 18:43:56,408 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 6/15: SetTimezone
+2020-03-13 18:43:56,408 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/local/bin/tdc-timezone', '"Asia/Kolkata"']
+2020-03-13 18:43:58,691 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/local/bin/tdc-timezone', '"Asia/Kolkata"']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+Timezone successfully changed to Asia/Kolkata
+
+### Task 7/15: LinkPdisks
+2020-03-13 18:43:58,691 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 7/15: LinkPdisks
+2020-03-13 18:43:58,691 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/local/bin/tdc-nodestart-link-pdisks', '--replacement-bynet-name', 'byn001-03']
+2020-03-13 18:44:04,259 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/local/bin/tdc-nodestart-link-pdisks', '--replacement-bynet-name', 'byn001-03']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+2020-03-13 18:44:02,052 tdc_azure.azure_helper [INFO] Current Cloud Region : AzurePublicCloud
+2020-03-13 18:44:02,773 tdc_azure.azure_helper [INFO] Current Instance ID : database-vm2-1
+2020-03-13 18:44:02,773 tdc_autostart.TDNodeAzure [DEBUG] Waiting till all the data disks appear on the node.
+2020-03-13 18:44:03,967 tdc_autostart.TDNodeAzure [DEBUG] Length of Current node data disks is : 6
+2020-03-13 18:44:03,967 tdc_autostart.TDNodeAzure [DEBUG] Length of VM data disks is : 6
+2020-03-13 18:44:03,967 tdc_autostart.ProcessRunner [DEBUG] Executing command: ['/usr/pde/bin/pcl', '-nodes', 'byn001-03', '-shell', 'ls -ld /sys/block/sd*/device']
+2020-03-13 18:44:04,032 tdc_autostart.TDNodeAzure [DEBUG] {0: 'sdd', 1: 'sdf', 2: 'sdh', 3: 'sde', 4: 'sdc', 5: 'sdg'}
+2020-03-13 18:44:04,032 tdc_autostart.TDNodeAzure [DEBUG] Entered into this function atleast
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk0
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk LUN: 0
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk6
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk LUN: 1
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk8
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk LUN: 2
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk9
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk LUN: 3
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk10
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk LUN: 4
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk ID : /subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk11
+2020-03-13 18:44:04,033 tdc_autostart.TDNodeAzure [DEBUG] Disk LUN: 5
+2020-03-13 18:44:04,034 tdc_autostart.TDNodeAzure [DEBUG] {'sdc': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk10',
+ 'sdd': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk0',
+ 'sde': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk9',
+ 'sdf': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/expanded-datadisk6',
+ 'sdg': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk11',
+ 'sdh': u'/subscriptions/3fdc8e96-c6dc-4c31-8997-49bd7bba1c61/resourceGroups/aditya_044604_1969/providers/Microsoft.Compute/disks/database-vm0-datadisk8'}
+2020-03-13 18:44:04,035 tdc_autostart.TDNodeAzure [DEBUG] {'sdc': [u'dsk10'],
+ 'sdd': [u'dsk20'],
+ 'sde': [u'dsk9'],
+ 'sdf': [u'dsk21'],
+ 'sdg': [u'dsk11'],
+ 'sdh': [u'dsk8']}
+2020-03-13 18:44:04,164 tdc_autostart.TDNodeAzure [DEBUG] {u'dsk10': '/dev/disk/by-id/wwn-0x60022480d8074a41d2dbd832223e6935-part1',
+ u'dsk11': '/dev/disk/by-id/wwn-0x600224803baccae5cbddfe2aa889c89e-part1',
+ u'dsk20': '/dev/disk/by-id/wwn-0x60022480b9d2d29d50b6851004ce9d7f-part1',
+ u'dsk21': '/dev/disk/by-id/wwn-0x60022480b1722b379166e55c456fe6b6-part1',
+ u'dsk8': '/dev/disk/by-id/wwn-0x6002248012ab8920f2de3ad2cabc7250-part1',
+ u'dsk9': '/dev/disk/by-id/wwn-0x60022480057c7a468b17451671ea7fa1-part1'}
+2020-03-13 18:44:04,165 tdc_autostart.ProcessRunner [DEBUG] Executing command: ['/opt/teradata/bynet/bin/bam', '-s']
+2020-03-13 18:44:04,205 tdc_autostart.ProcessRunner [DEBUG] Command `['/opt/teradata/bynet/bin/bam', '-s']` returned:
+Version information:
+03.07.05.08 BLM commands
+03.07.05.08 BLM driver
+18.04.12.13 BLM protocol
+
+Node is running in protocol emulation mode.
+Node state: attached
+
+Nodes   Routes  Net name
+4       4       eth0:0-udp-1001-10.1.1.6
+4       4       eth0:0-udp-1002-10.1.1.5
+
+
+2020-03-13 18:44:04,205 tdc_autostart.TDNodeAzure [DEBUG] Result of bam -s:
+Version information:
+03.07.05.08 BLM commands
+03.07.05.08 BLM driver
+18.04.12.13 BLM protocol
+
+Node is running in protocol emulation mode.
+Node state: attached
+
+Nodes   Routes  Net name
+4       4       eth0:0-udp-1001-10.1.1.6
+4       4       eth0:0-udp-1002-10.1.1.5
+
+
+2020-03-13 18:44:04,206 tdc_autostart.ProcessRunner [DEBUG] Executing command: ['/usr/pde/bin/pdestate', '-a']
+2020-03-13 18:44:04,210 tdc_autostart.ProcessRunner [DEBUG] Command `['/usr/pde/bin/pdestate', '-a']` returned:
+PDE state: DOWN/HARDSTOP
+
+2020-03-13 18:44:04,210 tdc_autostart.TDNodeAzure [DEBUG] Result of pdestate -a:
+PDE state: DOWN/HARDSTOP
+
+2020-03-13 18:44:04,225 tdc_core.cmd_clients [DEBUG] local [o]: lrwxrwxrwx 1 root tdtrusted 60 Mar 13 18:44 /dev/pdisk/dsk10 -> /dev/disk/by-id/wwn-0x60022480d8074a41d2dbd832223e6935-part1
+
+2020-03-13 18:44:04,225 tdc_core.cmd_clients [DEBUG] local [o]: lrwxrwxrwx 1 root tdtrusted 60 Mar 13 18:44 /dev/pdisk/dsk11 -> /dev/disk/by-id/wwn-0x600224803baccae5cbddfe2aa889c89e-part1
+
+2020-03-13 18:44:04,225 tdc_core.cmd_clients [DEBUG] local [o]: lrwxrwxrwx 1 root tdtrusted 60 Mar 13 18:44 /dev/pdisk/dsk20 -> /dev/disk/by-id/wwn-0x60022480b9d2d29d50b6851004ce9d7f-part1
+
+2020-03-13 18:44:04,225 tdc_core.cmd_clients [DEBUG] local [o]: lrwxrwxrwx 1 root tdtrusted 60 Mar 13 18:44 /dev/pdisk/dsk21 -> /dev/disk/by-id/wwn-0x60022480b1722b379166e55c456fe6b6-part1
+
+2020-03-13 18:44:04,226 tdc_core.cmd_clients [DEBUG] local [o]: lrwxrwxrwx 1 root tdtrusted 60 Mar 13 18:44 /dev/pdisk/dsk8 -> /dev/disk/by-id/wwn-0x6002248012ab8920f2de3ad2cabc7250-part1
+
+2020-03-13 18:44:04,226 tdc_core.cmd_clients [DEBUG] local [o]: lrwxrwxrwx 1 root tdtrusted 60 Mar 13 18:44 /dev/pdisk/dsk9 -> /dev/disk/by-id/wwn-0x60022480057c7a468b17451671ea7fa1-part1
+
+2020-03-13 18:44:04,226 tdc_core.utils.pdisk_link_service [INFO] links in /dev/pdisk/: [('/dev/pdisk/dsk10', ' /dev/disk/by-id/wwn-0x60022480d8074a41d2dbd832223e6935-part1'), ('/dev/pdisk/dsk11', ' /dev/disk/by-id/wwn-0x600224803baccae5cbddfe2aa889c89e-part1'), ('/dev/pdisk/dsk20', ' /dev/disk/by-id/wwn-0x60022480b9d2d29d50b6851004ce9d7f-part1'), ('/dev/pdisk/dsk21', ' /dev/disk/by-id/wwn-0x60022480b1722b379166e55c456fe6b6-part1'), ('/dev/pdisk/dsk8', ' /dev/disk/by-id/wwn-0x6002248012ab8920f2de3ad2cabc7250-part1'), ('/dev/pdisk/dsk9', ' /dev/disk/by-id/wwn-0x60022480057c7a468b17451671ea7fa1-part1')]
+2020-03-13 18:44:04,226 tdc_core.utils.pdisk_link_service [INFO] file: /usr/lib/tmpfiles.d/pdisk.conf updated.
+2020-03-13 18:44:04,227 tdc_autostart.TDNodeAzure [DEBUG] Done linking pdisks
+
+### Task 8/15: PreventSplitnet
+2020-03-13 18:44:04,259 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 8/15: PreventSplitnet
+Preventing SpliNet
+2020-03-13 18:44:04,259 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Preventing SpliNet
+2020-03-13 18:44:04,259 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', 'python27', '-m', 'tdc_core.utils.splitnet', '--pmaid', '35']
+2020-03-13 18:44:04,375 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', 'python27', '-m', 'tdc_core.utils.splitnet', '--pmaid', '35']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+2020-03-13 18:44:04,335 INFO:__main__:Getting node count from mpplist file
+2020-03-13 18:44:04,335 INFO:__main__:Checking splitnet prevention requirements, node_cnt=4, pma_id=35
+2020-03-13 18:44:04,335 INFO:__main__:Clearing tpamaxnets setting in startup.txt
+
+### Task 9/15: SetMOTD
+2020-03-13 18:44:04,375 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 9/15: SetMOTD
+Updating MOTD
+2020-03-13 18:44:04,376 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Updating MOTD
+2020-03-13 18:44:04,376 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', 'sudo', '-i', '/usr/local/bin/tdc-info']
+2020-03-13 18:44:13,585 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', 'sudo', '-i', '/usr/local/bin/tdc-info']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+
+### Task 10/15: SetAutostart
+2020-03-13 18:44:13,585 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 10/15: SetAutostart
+Setting Bynet chkconfig on.
+2020-03-13 18:44:13,585 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Setting Bynet chkconfig on.
+2020-03-13 18:44:13,585 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', '/sbin/chkconfig', 'bynet', 'on']
+2020-03-13 18:44:14,299 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', '/sbin/chkconfig', 'bynet', 'on']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+Synchronizing state of bynet.service with SysV init with /usr/lib/systemd/systemd-sysv-install...
+Executing /usr/lib/systemd/systemd-sysv-install enable bynet
+Created symlink from /etc/systemd/system/multi-user.target.wants/bynet.service to /usr/lib/systemd/system/bynet.service.
+
+Setting TPA chkconfig on.
+2020-03-13 18:44:14,299 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Setting TPA chkconfig on.
+2020-03-13 18:44:14,300 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', '/sbin/chkconfig', 'tpa', 'on']
+2020-03-13 18:44:14,520 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', '/sbin/chkconfig', 'tpa', 'on']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+Synchronizing state of tpa.service with SysV init with /usr/lib/systemd/systemd-sysv-install...
+Executing /usr/lib/systemd/systemd-sysv-install enable tpa
+Created symlink from /etc/systemd/system/multi-user.target.wants/tpa.service to /usr/lib/systemd/system/tpa.service.
+
+Setting PDE Autoconf to On
+2020-03-13 18:44:14,520 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Setting PDE Autoconf to On
+2020-03-13 18:44:14,520 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/pde/bin/pdeconf', 'AutoStart=on']
+2020-03-13 18:44:14,776 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', '/usr/pde/bin/pdeconf', 'AutoStart=on']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+Synchronizing state of tpa.service with SysV init with /usr/lib/systemd/systemd-sysv-install...
+Executing /usr/lib/systemd/systemd-sysv-install enable tpa
+Warning: //etc/init.d/tpa is masked by /usr/lib/systemd/system/tpa.service.
+Try 'chkconfig tpa on' instead
+
+### Task 11/15: HandleOldInstance
+2020-03-13 18:44:14,777 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 11/15: HandleOldInstance
+### Task 12/15: RestoreDSUSettings
+2020-03-13 18:44:14,777 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 12/15: RestoreDSUSettings
+Started:dsu configuration settings modifications for bynet node byn001-03
+2020-03-13 18:44:14,777 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Started:dsu configuration settings modifications for bynet node byn001-03
+Running '/sbin/chkconfig clienthandler'
+2020-03-13 18:44:14,777 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:Running '/sbin/chkconfig clienthandler'
+'/sbin/chkconfig clienthandler' returned 'clienthandler  off' with status '0'
+2020-03-13 18:44:14,824 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.tdc_nodestart:'/sbin/chkconfig clienthandler' returned 'clienthandler  off' with status '0'
+Clienthandler is not configured... Skipping
+2020-03-13 18:44:14,824 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Clienthandler is not configured... Skipping
+### Task 13/15: HandleQG
+2020-03-13 18:44:14,825 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 13/15: HandleQG
+Attempting to run QG Reconfig Script
+2020-03-13 18:44:14,825 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Attempting to run QG Reconfig Script
+2020-03-13 18:44:14,825 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.TDCBynet:Running command ls /etc/opt/teradata/tdqg/node/tdqg-reconfig.sh on byn001-03
+2020-03-13 18:44:14,825 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/usr/pde/bin/psh', '-N', 'byn001-03', 'ls', '/etc/opt/teradata/tdqg/node/tdqg-reconfig.sh']
+2020-03-13 18:44:14,926 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['/usr/pde/bin/psh', '-N', 'byn001-03', 'ls', '/etc/opt/teradata/tdqg/node/tdqg-reconfig.sh']` returned:
+
+<---------------------  byn001-03  -------------------------------->
+/usr/bin/ls: cannot access '/etc/opt/teradata/tdqg/node/tdqg-reconfig.sh': No such file or directory
+
+2020-03-13 18:44:14,926 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.TDNodeAzure:Unable to find tdqg-reconfig script
+tdqg-reconfig failed on byn001-03
+2020-03-13 18:44:14,926 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:tdqg-reconfig failed on byn001-03
+2020-03-13 18:44:15,866 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['psh', 'chkconfig', 'tdqg-node', 'on']
+2020-03-13 18:44:16,027 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['psh', 'chkconfig', 'tdqg-node', 'on']` returned:
+all 4 nodes:
+tdqg-node: unknown service
+
+2020-03-13 18:44:16,027 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['psh', 'chkconfig', 'tdqg-node']
+2020-03-13 18:44:16,370 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['psh', 'chkconfig', 'tdqg-node']` returned:
+all 4 nodes:
+tdqg-node: unknown service
+
+2020-03-13 18:44:16,371 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['pcl', '-s', '/etc/init.d/tdqg-node', 'status']
+2020-03-13 18:44:16,444 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_autostart.ProcessRunner:Command `['pcl', '-s', '/etc/init.d/tdqg-node', 'status']` returned:
+All 4 node(s) have connected
+
+<---------------------  byn001-03  -------------------------------->
+execve("/etc/init.d/tdqg-node", argv, env) failed : No such file or directory
+
+
+<---------------------  byn001-04  -------------------------------->
+execve("/etc/init.d/tdqg-node", argv, env) failed : No such file or directory
+
+
+<---------------------  byn001-01  -------------------------------->
+execve("/etc/init.d/tdqg-node", argv, env) failed : No such file or directory
+
+
+<---------------------  byn001-02  -------------------------------->
+execve("/etc/init.d/tdqg-node", argv, env) failed : No such file or directory
+
+
+Failure starting tdqg-node service
+2020-03-13 18:44:16,445 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Failure starting tdqg-node service
+### Task 14/15: HandleBYOL
+2020-03-13 18:44:17,128 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 14/15: HandleBYOL
+### Task 15/15: HandleFailedNodeMSI
+2020-03-13 18:44:17,129 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:### Task 15/15: HandleFailedNodeMSI
+Handling MSI for failed database instances.
+2020-03-13 18:44:17,129 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Handling MSI for failed database instances.
+2020-03-13 18:44:17,149 [byn001-03(database-vm2)->(database-vm2-1)] DEBUG:tdc_azure.azure_helper:Getting Instance IDs with tag : FailedDatabase
+2020-03-13 18:44:17,162 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_azure.azure_helper:Current instance type : Standard_E16s_v3
+2020-03-13 18:44:17,294 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_azure.azure_helper:Removing MSI from VM database-vm2
+2020-03-13 18:44:23,210 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_azure.azure_helper:Unable to update VM in the designated time. Exception raised to retry
+################################################################################
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:################################################################################
+#  Node has been replaced
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:#  Node has been replaced
+################################################################################
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:################################################################################
+
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:
+Running cleanup for HandleFailedNodeMSI
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for HandleFailedNodeMSI
+Nothing to do
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for HandleBYOL
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for HandleBYOL
+Nothing to do
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for HandleQG
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for HandleQG
+Nothing to do
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for RestoreDSUSettings
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for RestoreDSUSettings
+Nothing to do
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for HandleOldInstance
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for HandleOldInstance
+Nothing to do
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for SetAutostart
+2020-03-13 18:44:23,211 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for SetAutostart
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for SetMOTD
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for SetMOTD
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for PreventSplitnet
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for PreventSplitnet
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for LinkPdisks
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for LinkPdisks
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for SetTimezone
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for SetTimezone
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for CopyFiles
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for CopyFiles
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for HandleMSI
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for HandleMSI
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for LaunchNewInstance
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for LaunchNewInstance
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for CreateNetworkConfig
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for CreateNetworkConfig
+Nothing to do
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Running cleanup for RunDiagnostics
+2020-03-13 18:44:23,212 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Running cleanup for RunDiagnostics
+Nothing to do
+2020-03-13 18:44:23,213 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Nothing to do
+Task Done
+2020-03-13 18:44:23,213 [byn001-03(database-vm2)->(database-vm2-1)] INFO:tdc_autostart.tdc_nodestart:Task Done
+2020-03-13 18:44:23,235 [MainThread] DEBUG:tdc_autostart.ProcessRunner:Executing command: ['/opt/teradata/bynet/bin/bam', '-i']
+2020-03-13 18:44:23,305 [MainThread] INFO:tdc_autostart.TDCBynet:Waiting for bynet... 4/4 nodes responded
+Updating node map and sending updated map to other nodes
+2020-03-13 18:44:28,838 [MainThread] INFO:tdc_autostart.tdc_nodestart:Updating node map and sending updated map to other nodes
+2020-03-13 18:44:28,839 [MainThread] INFO:tdc_azure.azure_helper:Running feature reinit command to update nodes data metadata : /usr/local/bin/tdc-feature-init
+2020-03-13 18:49:01,004 [MainThread] INFO:tdc_azure.azure_helper:Feature Reinit command successful.
+Launching new HSN/s : 0
+2020-03-13 18:49:01,004 [MainThread] INFO:tdc_autostart.tdc_nodestart:Launching new HSN/s : 0
+Replaced Node: byn001-03 (database-vm2)
+2020-03-13 18:49:01,370 [MainThread] INFO:tdc_autostart.tdc_nodestart:Replaced Node: byn001-03 (database-vm2)
+** Total time spent in nodestart: 16 minutes, 13.7902 seconds
+2020-03-13 18:49:01,371 [MainThread] INFO:tdc_autostart.tdc_nodestart:** Total time spent in nodestart: 16 minutes, 13.7902 seconds
+2020-03-13 18:49:01,371 [MainThread] INFO:root:Trying to upload /var/log/NFR/tdc-nodestart.log to storage account log stream : NFR/tdc-nodestart_20200313183247.txt
+2020-03-13 18:49:06,378 [MainThread] DEBUG:azure.storage.common._auth:String_to_sign=PUT
+
+
+
+
+
+
+
+
+
+
+
+x-ms-blob-public-access:blob
+x-ms-client-request-id:374a6f22-652d-11ea-a74d-000d3a376427
+x-ms-date:Fri, 13 Mar 2020 13:19:06 GMT
+x-ms-version:2018-03-28
+/diagqe5542jwcvpji/database-aditya-044604-1969
+restype:container
+2020-03-13 18:49:06,378 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=374a6f22-652d-11ea-a74d-000d3a376427 Outgoing request: Method=PUT, Path=/database-aditya-044604-1969, Query={'restype': 'container', 'timeout': None}, Headers={'x-ms-version': '2018-03-28', 'x-ms-date': 'Fri, 13 Mar 2020 13:19:06 GMT', 'User-Agent': 'Azure-Storage/1.4.2-1.5.0 (Python CPython 2.7.13; Linux 4.4.140-96.34.TDC-default)', 'x-ms-client-request-id': '374a6f22-652d-11ea-a74d-000d3a376427', 'Authorization': 'REDACTED', 'x-ms-blob-public-access': 'blob'}.
+2020-03-13 18:49:06,417 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=374a6f22-652d-11ea-a74d-000d3a376427 Receiving Response: Server-Timestamp=Fri, 13 Mar 2020 13:19:06 GMT, Server-Request-ID=08a502c2-001e-000d-5e39-f946f5000000, HTTP Status Code=409, Message=The specified container already exists., Headers={'x-ms-version': '2018-03-28', 'x-ms-request-id': '08a502c2-001e-000d-5e39-f946f5000000', 'content-length': '230', 'server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0', 'date': 'Fri, 13 Mar 2020 13:19:06 GMT', 'content-type': 'application/xml', 'x-ms-error-code': 'ContainerAlreadyExists'}.
+2020-03-13 18:49:06,418 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=374a6f22-652d-11ea-a74d-000d3a376427 Received expected http error: Server-Timestamp=Fri, 13 Mar 2020 13:19:06 GMT, Server-Request-ID=08a502c2-001e-000d-5e39-f946f5000000, HTTP status code=409, Exception=The specified container already exists. ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:08a502c2-001e-000d-5e39-f946f5000000Time:2020-03-13T13:19:07.4913343Z</Message></Error>.
+2020-03-13 18:49:06,418 [MainThread] INFO:tdc_azure.azurelogs:Created the required log group or stream.
+2020-03-13 18:49:06,419 [MainThread] DEBUG:azure.storage.common._auth:String_to_sign=PUT
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:3750cb92-652d-11ea-a74d-000d3a376427
+x-ms-date:Fri, 13 Mar 2020 13:19:06 GMT
+x-ms-version:2018-03-28
+/diagqe5542jwcvpji/database-aditya-044604-1969
+restype:container
+2020-03-13 18:49:06,419 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=3750cb92-652d-11ea-a74d-000d3a376427 Outgoing request: Method=PUT, Path=/database-aditya-044604-1969, Query={'restype': 'container', 'timeout': None}, Headers={'x-ms-version': '2018-03-28', 'x-ms-date': 'Fri, 13 Mar 2020 13:19:06 GMT', 'User-Agent': 'Azure-Storage/1.4.2-1.5.0 (Python CPython 2.7.13; Linux 4.4.140-96.34.TDC-default)', 'x-ms-client-request-id': '3750cb92-652d-11ea-a74d-000d3a376427', 'Authorization': 'REDACTED', 'x-ms-blob-public-access': None}.
+2020-03-13 18:49:06,450 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=3750cb92-652d-11ea-a74d-000d3a376427 Receiving Response: Server-Timestamp=Fri, 13 Mar 2020 13:19:07 GMT, Server-Request-ID=1206ddec-901e-004c-2d39-f96ee6000000, HTTP Status Code=409, Message=The specified container already exists., Headers={'x-ms-version': '2018-03-28', 'x-ms-request-id': '1206ddec-901e-004c-2d39-f96ee6000000', 'content-length': '230', 'server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0', 'date': 'Fri, 13 Mar 2020 13:19:07 GMT', 'content-type': 'application/xml', 'x-ms-error-code': 'ContainerAlreadyExists'}.
+2020-03-13 18:49:06,450 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=3750cb92-652d-11ea-a74d-000d3a376427 Received expected http error: Server-Timestamp=Fri, 13 Mar 2020 13:19:07 GMT, Server-Request-ID=1206ddec-901e-004c-2d39-f96ee6000000, HTTP status code=409, Exception=The specified container already exists. ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:1206ddec-901e-004c-2d39-f96ee6000000Time:2020-03-13T13:19:07.5245348Z</Message></Error>.
+2020-03-13 18:49:06,451 [MainThread] DEBUG:azure.storage.common._auth:String_to_sign=PUT
+
+
+107026
+
+
+
+
+
+
+
+
+x-ms-blob-type:BlockBlob
+x-ms-client-request-id:37558e34-652d-11ea-a74d-000d3a376427
+x-ms-date:Fri, 13 Mar 2020 13:19:06 GMT
+x-ms-version:2018-03-28
+/diagqe5542jwcvpji/database-aditya-044604-1969/NFR/tdc-nodestart_20200313183247.txt
+2020-03-13 18:49:06,451 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=37558e34-652d-11ea-a74d-000d3a376427 Outgoing request: Method=PUT, Path=/database-aditya-044604-1969/NFR/tdc-nodestart_20200313183247.txt, Query={'timeout': None}, Headers={'Content-Length': '107026', 'x-ms-blob-type': 'BlockBlob', 'x-ms-version': '2018-03-28', 'x-ms-lease-id': None, 'x-ms-client-request-id': '37558e34-652d-11ea-a74d-000d3a376427', 'If-Match': None, 'If-Modified-Since': None, 'If-None-Match': None, 'User-Agent': 'Azure-Storage/1.4.2-1.5.0 (Python CPython 2.7.13; Linux 4.4.140-96.34.TDC-default)', 'If-Unmodified-Since': None, 'Authorization': 'REDACTED', 'x-ms-date': 'Fri, 13 Mar 2020 13:19:06 GMT'}.
+2020-03-13 18:49:06,461 [MainThread] INFO:azure.storage.common.storageclient:Client-Request-ID=37558e34-652d-11ea-a74d-000d3a376427 Receiving Response: Server-Timestamp=Fri, 13 Mar 2020 13:19:07 GMT, Server-Request-ID=1206ddef-901e-004c-2e39-f96ee6000000, HTTP Status Code=201, Message=Created, Headers={'content-length': '0', 'x-ms-request-server-encrypted': 'true', 'x-ms-request-id': '1206ddef-901e-004c-2e39-f96ee6000000', 'x-ms-version': '2018-03-28', 'server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0', 'last-modified': 'Fri, 13 Mar 2020 13:19:07 GMT', 'etag': '"0x8D7C7511C2EE503"', 'date': 'Fri, 13 Mar 2020 13:19:07 GMT', 'content-md5': 'bCimhVRytVOzEHL7RpTZkQ=='}.
+2020-03-13 18:49:06,462 [MainThread] INFO:root:Successfully uploaded /var/log/NFR/tdc-nodestart.log to storage account log stream : NFR/tdc-nodestart_20200313183247.txt
+2020-03-13 18:49:06,463 [MainThread] DEBUG:root:Unable to get the custom storage account info.
+Not going to upload the file /var/log/NFR/tdc-nodestart.log to custom storage account 
+2020-03-13 18:49:06,463 [MainThread] DEBUG:root:No custom log storage account information found.
+Success!
+2020-03-13 18:49:06,463 [MainThread] INFO:tdc_autostart.tdc_nodestart:Success!
