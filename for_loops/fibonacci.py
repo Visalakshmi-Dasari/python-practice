@@ -10,3 +10,4 @@ def fibonacci():
         y = z
 
 fibonacci()
+print('Test')
